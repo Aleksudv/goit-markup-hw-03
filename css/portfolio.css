@@ -1,166 +1,266 @@
-:root{
-    --primary-text-color: rgba(33, 33, 33, 1);
-    --title-tex-color: rgba(117, 117, 117, 1);
-    --accent-color: rgba(33, 150, 243, 1);
-    --accent-color-white:rgba(255, 255, 255, 1);
-    --background-color: rgba(47, 48, 58, 1);
-    --hover-focus-color: rgba(33, 150, 243, 1);}
+:root {
+  --primary-text-color: rgba(33, 33, 33, 1);
+  --title-tex-color: rgba(117, 117, 117, 1);
+  --accent-color: rgba(33, 150, 243, 1);
+  --accent-color-white: rgba(255, 255, 255, 1);
+  --background-color: rgba(47, 48, 58, 1);
+  --hover-focus-color: rgba(33, 150, 243, 1);
+}
 
-body {
-    color:var(--primary-text-color);
-    background-color:#E5E5E5;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-    font-family: roboto, sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.03em;}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-.header {
-    background-color: rgba(255, 255, 255, 1);
-        }
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
 
 .list {
-        list-style: none;    }
+  list-style: none;
+}
 
-    /* LOGO */
+button {
+  cursor: pointer;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #e5e5e5;
+
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.cont-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LOGO */
 
 .logo {
-font-family: raleway;
-color:rgba(33, 150, 243, 1);
-text-decoration: none;
+  display: flex;
+  font-family: raleway;
+  color: rgba(33, 150, 243, 1);
 
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;}
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
 .studio {
-    color:rgba(0, 0, 0, 1)}
+  color: rgba(0, 0, 0, 1);
+}
 
 /* SITE NAV */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  column-gap: 50px;
+}
+
 .site-nav .link {
-color: var(--primary-text-color);
+  color: var(--primary-text-color);
 
-text-decoration: none;
-
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: var(--hover-focus-color);}
+  color: var(--hover-focus-color);
+}
 
 .site-nav .link-portfolio.current {
-color:var(--accent-color);
+  color: var(--accent-color);
 
-text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;}
+.site-adress {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
 
 .site-adress .adress {
-    color: var(--title-tex-color);
-   
-text-decoration: none;
+  color: var(--title-tex-color);
 
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;}
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 
 .site-adress .adress:hover,
 .site-adress .adress:focus {
-    color: var(--accent-color);}
+  color: var(--accent-color);
+}
 
 /* MAIN */
 .title {
-    display: none;
+  display: none;
 }
 /* КНОПКИ */
 
 .batton-nav .batton-oll {
-    font-family: inherit;
-    color: var(--accent-color-white);
-    background-color: rgba(33, 150, 243, 1);
-    cursor: pointer;
-    
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;}
+  font-family: inherit;
+  color: var(--accent-color-white);
+  background-color: rgba(33, 150, 243, 1);
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
 
 .batton-nav .batton {
-    font-family: inherit;
-    color: var(--primary-text-color);
-    background-color: rgba(245, 244, 250, 1);
-    cursor: pointer;
+  font-family: inherit;
+  color: var(--primary-text-color);
+  background-color: rgba(245, 244, 250, 1);
+  cursor: pointer;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;}
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
 
+.batton-nav .batton:hover,
+.batton-nav .batton:focus {
+  color: var(--hover-focus-color);
+}
 
-    .batton-nav .batton:hover,
-    .batton-nav .batton:focus {
-        color:var(--hover-focus-color);
-    }
+.batton-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
 
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 /* СПИСОК ПРОЕКТІВ */
 
-.text .text-title {
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
-    font-size: 18px;
-    line-height: 2;    
-    letter-spacing: 0.06em;
+  padding-bottom: 94px;
+}
+
+.text .text-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin: 20px 24px 4px 24px;
 }
 
 .text .text-list {
-color:var(--title-tex-color);
+  color: var(--title-tex-color);
 
-font-size: 16px;
-line-height: 1.88;
+  font-size: 16px;
+  line-height: 1.88;
+
+  margin: 4px 24px 20px 24px;
+}
+
+.tex-footer {
+  background-color: var(--accent-color-white);
 }
 
 /* FOOTER */
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .footer {
-    background-color:var(--background-color);}
+  background-color: var(--background-color);
+}
 
 .footer-logo {
-    font-family: raleway;
-    color: rgba(33, 150, 243, 1);
-    text-decoration: none;
+  font-family: raleway;
+  color: rgba(33, 150, 243, 1);
 
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.9;}
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+}
 .footer-studio {
-    color: rgba(255, 255, 255, 1);}
+  color: rgba(255, 255, 255, 1);
+}
 
 /* ADRESS FOOTER */
 
 .adress-reg {
-    color: rgba(255, 255, 255, 1);
-    text-decoration: none;
+  color: rgba(255, 255, 255, 1);
 
-    font-weight: 400;
-    line-height: 1.7;}
+  font-weight: 400;
+  line-height: 1.7;
+}
 
 .adress-email,
 .adress-phone {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
 
-    font-weight: 400;
-    line-height: 1.7;}
+  font-weight: 400;
+  line-height: 1.7;
+}
 
 .adress-email:hover,
 .adress-phone:hover,
 .adress-email:focus,
 .adress-phone:focus {
-    color: var(--hover-focus-color);}
+  color: var(--hover-focus-color);
+}
