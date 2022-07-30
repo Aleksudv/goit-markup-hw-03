@@ -73,12 +73,14 @@ body {
 
 .page-header {
   background-color: var(--background-color-white);
+  padding: 24px 0px;
 }
 
 .cont-nav {
   display: flex;
   align-items: center;
 }
+
 .page-header .wrapper {
   display: flex;
   justify-content: space-between;
@@ -88,8 +90,6 @@ body {
 
 .logo {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
 
   font-family: raleway, cursive;
   color: var(--color-logo-blue);
@@ -115,8 +115,6 @@ body {
 
 .site-nav .link-studio.current {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--accent-color);
 
@@ -127,8 +125,6 @@ body {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 
@@ -147,11 +143,6 @@ body {
 .site-adress {
   display: flex;
   align-items: center;
-}
-
-.site-adress .item {
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-adress .item:not(:last-child) {
@@ -178,14 +169,16 @@ body {
 .hero {
   background-color: var(--background-color);
   text-align: center;
+  padding: 200px 0px;
+}
+
+.container-hero {
+  display: block;
+  justify-content: center;
 }
 
 .hero-title {
   color: var(--background-color-white);
-
-  padding-top: 200px;
-  padding-right: 452px;
-  padding-left: 452px;
 
   font-weight: 900;
   font-size: 44px;
@@ -200,16 +193,13 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  align-items: center;
   letter-spacing: 0.06em;
-}
 
-.button {
   padding: 10px 32px;
   margin-top: 30px;
-  margin-right: 700px;
-  margin-bottom: 200px;
-  margin-left: 700px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* SECTION */
@@ -222,7 +212,6 @@ body {
 
 .feature {
   display: flex;
-  padding-top: 94px;
 
   justify-content: center;
   column-gap: 50px;
@@ -261,17 +250,20 @@ body {
 }
 
 /* Команда */
+.section {
+  padding-top: 94px;
+}
 
 .section-comand {
   background-color: rgba(245, 244, 250, 1);
+  padding-top: 94px;
 }
 .section-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .feature-comand .feature-picture {
@@ -291,6 +283,12 @@ body {
 
 .feature-picture:not(:last-child) {
   margin-right: 30px;
+}
+
+.feature-picture {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .feature-comand .feature-title {
