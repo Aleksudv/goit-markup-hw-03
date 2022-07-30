@@ -320,12 +320,17 @@ address {
 
 .footer {
   background-color: var(--background-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container-logo {
+  margin-bottom: 20px;
 }
 
 .footer-logo {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 20px;
 
   font-family: raleway;
   color: var(--color-logo-blue);
@@ -358,7 +363,6 @@ address {
 
 .adress-phone {
   display: flex;
-  padding-bottom: 60px;
 }
 
 .adress-email,
