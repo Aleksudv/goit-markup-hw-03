@@ -213,7 +213,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 }
 
 .text .text-list {
@@ -221,12 +221,14 @@ body {
 
   font-size: 16px;
   line-height: 1.88;
-
-  margin: 4px 24px 20px 24px;
 }
 
 .tex-footer {
   background-color: var(--accent-color-white);
+}
+
+.container-tex-footer {
+  padding: 20px 24px;
 }
 
 /* FOOTER */
