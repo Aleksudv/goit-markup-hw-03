@@ -143,9 +143,21 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-adress .adress:hover,
-.site-adress .adress:focus {
+.adress:hover,
+.adress:focus {
   color: var(--accent-color);
+}
+
+.adres_icon {
+  width: 16px;
+  height: 12px;
+  fill: var(--title-tex-color);
+  margin-right: 10px;
+}
+
+.adres_icon:hover,
+.adres_icon:focus {
+  fill: var(--accent-color);
 }
 
 /* MAIN */
@@ -199,20 +211,22 @@ body {
 
 .button-nav .button:hover,
 .button-nav .button:focus {
-  color: var(--hover-focus-color);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(33, 150, 243, 1);
 }
 
 .button-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 30px;
+  column-gap: 8px;
 
   padding-top: 94px;
   margin-bottom: 50px;
 
   width: calc(100% - 32px) / 5;
 }
+
 /* СПИСОК ПРОЕКТІВ */
 
 .text-container {
@@ -240,6 +254,9 @@ body {
 
 .tex-footer {
   background-color: var(--accent-color-white);
+
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .container-tex-footer {
@@ -313,4 +330,66 @@ address {
 .adress-email:focus,
 .adress-phone:focus {
   color: var(--hover-focus-color);
+}
+
+.sotial-title_footer {
+  display: flex;
+  color: rgba(255, 255, 255, 1);
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.container-social_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-list_footer:hover,
+.social-list_footer:focus {
+  background-color: rgba(33, 150, 243, 1);
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+}
+
+.container-social_footer {
+  display: flex;
+}
+
+.container-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+
+.container-social_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+
+  margin-top: 20px;
 }
